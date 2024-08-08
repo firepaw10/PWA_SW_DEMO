@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+#features {
+    padding: 20px;
+    background: #fff;
+}
+
+#features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#features ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#features li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#social-proof {
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+#social-proof h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+#cta {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+#cta h2 {
+    margin-bottom: 20px;
+}
+
+#email-opt-in {
+    display: inline-block;
+}
+
+#email-opt-in input {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+#email-opt-in button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#email-opt-in button:hover {
+    background: #0056b3;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Hello World!</h1>
+    
+    <h1>It works on my machine... &#</h1>
+    <p>...and it works on every machine! ⚡</p>
+
+    <form id="mailing_list" method="POST" action="/emailing_list">
+        <h1>Join Our Emailing List!</h1>
+        <input id="email" type="email" placeholder="email address"/>
+        <br/>
+        <button type="submit">Join</button>
+    </form>
+</body>
+<script src="/src/js/main.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/idb@8/build/umd.js"></script>
+<script>
+
+    function detectOS() {
+        const userAgent = window.navigator.userAgent;
+        if (userAgent.match(/Windows/i)) {
+            alert(`Client Operating System: Windows`);
+            window.location.href = 'windows_machine.html';
+        } else if (userAgent.match(/Macintosh/i)) {
+            alert(`Client Operating System: Macintosh`);
+            window.location.href = 'mac_machine.html';
+        } else if (userAgent.match(/Linux/i)) {
+            alert(`Client Operating System: Linux`);
+            window.location.href='linux_machine.html';
+        } else {
+            alert(`Client Operating System: generic`);
+            window.location.href = 'generic.html';
+        }
+    }
+    detectOS();
+    const response =  fetch('https://ipinfo.io/ip', { mode: 'cors'})
+    .then(response => response.text()).then(data => {
+        console.log(data);
+    });
+</script>
+</html>
